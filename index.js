@@ -16,10 +16,11 @@ for (let i = 0; i < arrayBtn.length; i++) {
         let clickedBtn = this;
         // change back text button color 
         function clearColor(){
-            clickedBtn.style.color = "#DA0463";
+            clickedBtn.classList.remove("red");
         }
         // change text button to yellow after button click
-        clickedBtn.style.color = "red"
+        // clickedBtn.style.color = "red";
+        clickedBtn.classList.add("red");
         // set time 2s for change back text button color
         let intervalId = setInterval(function() {
             clearColor();
@@ -89,14 +90,16 @@ window.addEventListener("keypress", function (e) {
     }    
     // change back text color 
     function clearColor(){
-        elementClicked[0].style.color = "#DA0463";
+        // elementClicked[0].style.color = "#DA0463";
+        elementClicked[0].classList.remove("red");
     }
     // change text button to yellow after key presses
-    elementClicked[0].style.color = "red";
+    // elementClicked[0].style.color = "red";
+    elementClicked[0].classList.add("red");
     // set time 2s for change back text button color
-    // setTimeout(clearColor, 2000)
     let intervalId = setInterval(function() {
         clearColor();
         clearInterval(intervalId); // Menghentikan interval setelah fungsi dijalankan sekali
     }, 2000);
+    // setTimeout(clearColor, 2000)
 });

@@ -58,10 +58,6 @@ footer {
   opacity: 0.5;
 }
 
-.red {
-  color: red;
-}
-
 .drum {
   outline: none;
   border: 10px solid #404B69;
@@ -78,4 +74,8 @@ footer {
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+.red {
+  color: red;
 }
